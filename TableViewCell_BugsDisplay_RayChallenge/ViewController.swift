@@ -28,7 +28,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "bugCell", for: indexPath)
         let individualBug = bugs[indexPath.row]
         cell.textLabel?.text = individualBug.title
-        cell.detailTextLabel?.text = individualBug.subTitle
+        cell.detailTextLabel?.text = Bug.scaryFactorToString(scaryFactor: individualBug.howScary)
         if let image = individualBug.image {
             cell.imageView?.image = image
         }
