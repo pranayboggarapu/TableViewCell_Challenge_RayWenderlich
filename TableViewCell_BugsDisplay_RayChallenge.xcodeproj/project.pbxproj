@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE06FA3121163A9900777207 /* ScaryBugsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE06FA3021163A9900777207 /* ScaryBugsTableViewController.swift */; };
 		FE1465F02112C6060079B77C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1465EF2112C6060079B77C /* AppDelegate.swift */; };
 		FE1465F22112C6060079B77C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1465F12112C6060079B77C /* ViewController.swift */; };
 		FE1465F52112C6060079B77C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE1465F32112C6060079B77C /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE06FA3021163A9900777207 /* ScaryBugsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaryBugsTableViewController.swift; sourceTree = "<group>"; };
 		FE1465EC2112C6060079B77C /* TableViewCell_BugsDisplay_RayChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewCell_BugsDisplay_RayChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE1465EF2112C6060079B77C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE1465F12112C6060079B77C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				FE1465F62112C6090079B77C /* Assets.xcassets */,
 				FE1465F82112C6090079B77C /* LaunchScreen.storyboard */,
 				FE1465FB2112C6090079B77C /* Info.plist */,
+				FE06FA3021163A9900777207 /* ScaryBugsTableViewController.swift */,
 			);
 			path = TableViewCell_BugsDisplay_RayChallenge;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				FE1465F22112C6060079B77C /* ViewController.swift in Sources */,
 				FE1465F02112C6060079B77C /* AppDelegate.swift in Sources */,
 				FE1466362112C6730079B77C /* Bugs.swift in Sources */,
+				FE06FA3121163A9900777207 /* ScaryBugsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
