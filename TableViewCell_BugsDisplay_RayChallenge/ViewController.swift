@@ -13,6 +13,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     var bugSections = [BugSection]()
 
     
+    @IBOutlet weak var bugDisplay: UITableView!
     
     private func setupBugs() {
         bugSections.append(BugSection(howScary: .NotScary))
@@ -29,9 +30,19 @@ class ViewController: UIViewController, UITableViewDataSource {
         }
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let bugSection = bugSections[indexPath.section]
+            bugSection.bugs.remove(at: indexPath.row)
+            //tableView.reloadData()
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupBugs()
+        navigationItem.rightBarButtonItem = editButtonItem
         // Do any additional setup after loading the view, typically from a nib.
         
     }
@@ -59,6 +70,16 @@ class ViewController: UIViewController, UITableViewDataSource {
             cell.imageView?.image = image
         }
         return cell
+    }
+    
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
+        if editing {
+            bugDisplay.setEditing(editing, animated: true)
+            
+        } else {
+            bugDisplay.setEditing(false, animated: true)
+        }
     }
 }
 
